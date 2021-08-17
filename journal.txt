@@ -1,0 +1,7 @@
+Final project progress journal
+Michael Han
+
+17 Aug - Started laying out index page, selected photos to use. My plan is
+    to create a multi-page site. My home page will be an array of tiles
+    with photo backgrounds and some sort of dynamic reaction when moused over
+    that link to the other pages. 

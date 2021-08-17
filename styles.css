@@ -1,0 +1,21 @@
+.pageTitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+}
+
+.spanner {
+    height: 3cm;
+    background-color: beige;
+}
+
+.schoolName {
+    width: max-content;
+    word-wrap: normal;
+    display:block;
+}
+
+.schoolBlock {
+    margin: auto;
+}
