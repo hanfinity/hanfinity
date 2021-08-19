@@ -3,6 +3,11 @@ let timelineData = {
         title: 'sample',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisi in',
         url: 'https://placekitten.com/g/300/300',
+    },
+    1: {
+        title: 'sample2',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisi in',
+        url: 'https://placekitten.com/g/300/300',
     }
 }
 
@@ -28,6 +33,8 @@ $(document).ready(() => {
                 $('<div>').append(
                     $('<img>').attr({
                         src: timelineData[key].url,
+                        width: '300px',
+                        height: '300px'
                     })
                 ).attr({class: 'timePhoto'})
                 .css({gridRow: row})
@@ -35,6 +42,12 @@ $(document).ready(() => {
                 class: 'timelineItem'
             })
             ++row;
+    })
+    $('#line').css({
+        gridRow: '1/-1',
+        gridColumn: '1',
+        width: '100%',
+        height: '100%'
     })
     console.log('timeline entries: ' + (row-1))
 })

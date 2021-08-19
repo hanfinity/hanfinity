@@ -1,7 +1,24 @@
+a {
+    color: black;
+    font-style: normal;
+}
+
+a:hover {
+    color:darkgray;
+    font-style: normal;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+.collegeImg {
+    border-radius: 10px;
+}
+
 .pageTitle {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding-top: 20px;
     display: block;
 }
 
@@ -12,21 +29,40 @@
 .schoolName {
     width: max-content;
     word-wrap: normal;
-    display:block;
+    display: block;
+    position: absolute;
+    font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: whitesmoke;
 }
 
 .schoolBlock {
     margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.row {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+.titleBar {
+    width: 90%;
+    margin:auto;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 .card {
     padding: 10%;
+    margin-top: 20px;
 }
 .card:hover {
     background-color: cadetblue;
@@ -42,10 +78,9 @@
 
 .line {
     background-color: black;
-    grid-row: span 1/-1;
-    grid-column: 1;
     width: 10%;
     height: 100%;
+    margin: auto;
 }
 
 
