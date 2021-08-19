@@ -5,3 +5,7 @@ Michael Han
     to create a multi-page site. My home page will be an array of tiles
     with photo backgrounds and some sort of dynamic reaction when moused over
     that link to the other pages. 
+
+19 Aug - have a basic idea what the index page will look like. Implemented 
+    start of previous experience page. Wrote javascript code to place
+    experiences on the page.

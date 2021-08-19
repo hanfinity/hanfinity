@@ -6,8 +6,7 @@
 }
 
 .spanner {
-    height: 3cm;
-    background-color: beige;
+    height: 1cm;
 }
 
 .schoolName {
@@ -19,3 +18,46 @@
 .schoolBlock {
     margin: auto;
 }
+
+.row {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    padding: 10%;
+}
+.card:hover {
+    background-color: cadetblue;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.col-xs-12 {
+    margin-top: 10px;
+}
+
+.line {
+    background-color: black;
+    grid-row: span 1/-1;
+    grid-column: 1;
+    width: 10%;
+    height: 100%;
+}
+
+
+.timeTitle {
+    grid-column: 2;
+    font-size: xx-large;
+}
+
+.timeBody {
+    grid-column: 3;
+}
+
+.timePhoto {
+    grid-column: 4;
+} 
