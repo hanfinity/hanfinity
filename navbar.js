@@ -15,7 +15,7 @@ $(document).ready(() => {
                 .css({
                     display: 'inline',
                     padding: '25px',
-                    marginRight: '100px'
+                    marginRight: '75px'
                 })
                 .append(
                     $('<a>')

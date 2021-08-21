@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-    color:darkgray;
+    color:black;
     font-style: normal;
 }
 
@@ -14,6 +14,12 @@ body {
 
 .collegeImg {
     border-radius: 10px;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.collegeImg:hover {
+    opacity: 100%;
 }
 
 .pageTitle {
@@ -31,19 +37,19 @@ body {
     word-wrap: normal;
     display: block;
     position: absolute;
-    font-size: large;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: whitesmoke;
+    font-size: medium;
+    letter-spacing: 2px;
+    color: black;
 }
 
 .schoolBlock {
     margin: auto;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     width: 100%;
     height: 100%;
+    margin-top: 10px;
 }
 
 .titleBar {
@@ -62,10 +68,19 @@ body {
 
 .card {
     padding: 10%;
-    margin-top: 20px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    border:none;
 }
-.card:hover {
-    background-color: cadetblue;
+
+.card-img-top {
+    border-radius: 10px;
+    opacity: 70%;
+}
+
+.card-img-top:hover {
+    opacity: 100%;
 }
 
 .card-title {
@@ -96,3 +111,15 @@ body {
 .timePhoto {
     grid-column: 4;
 } 
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.icon {
+    padding: 10px;
+}
