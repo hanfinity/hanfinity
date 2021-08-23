@@ -8,6 +8,11 @@ a:hover {
     font-style: normal;
 }
 
+.aboutImage {
+    display: block;
+    margin:auto;
+}
+
 body {
     background-color: cornsilk;
 }
@@ -26,6 +31,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: block;
+    padding: 25px;
 }
 
 .spanner {
