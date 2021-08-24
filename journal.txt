@@ -16,3 +16,5 @@ Michael Han
     contact pages exist but are stubs. TODO: find a better favicon for the
     page, make timeline work on mobile, decide a format for the contact page,
     and a format for the projects page.
+
+24 Aug - Created contact form

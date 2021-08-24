@@ -17,9 +17,25 @@
         <div id='nav'>
             <!-- javascript will insert nav items here -->
         </div>
-        <div class='underConstruction'>
-            <div>Under Construction! </div><br/>
-            <img src='media/old-under-construction-gif.gif' />
+        <div class='container'>
+            <h1 class="pageTitle">Contact Form</h1>
+            <form>
+                <div class="form-group">
+                    <label for='nameField'>Name</label>
+                    <input type='text' class ='form-control' id='nameField' placeholder="enter your name">
+                </div>
+                <div class='form-group'>
+                    <label for='emailField'>Email</label>
+                    <input type='email' class='form-control' id='emailField' placeholder="enter your email">
+                </div>
+                <div>
+                    <label for='messageField'>Message</label>
+                    <textarea rows='3' class='form-control message' id='messageField' placeholder="type your message here"></textarea>
+                </div>
+                <br>
+                <button type='submit' class='btn btn-primary'>Submit</button>&nbsp;
+                <button type='cancel' class='btn btn-secondary'>Cancel</button>
+            </form>
         </div>
         <div class="icons">
             <div class='icon'><a href='https://github.com/hanfinity'>
