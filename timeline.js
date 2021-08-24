@@ -2,22 +2,26 @@ let timelineData = {
     0: {
         title: '2019-2020',
         text: 'My final position at HP was in printhead health and servicing. I was working on the newest generation of deskjets, using all-new thermal inkjet technology. I was responsible for the interior maintaince-ink storage and control, parts that funnel the excess ink that printers jet while cleaning and preparing to print so that ink does not spill out of the printer. I was also in charge of the servo system the printer used to wipe the ink cartriges.',
-        url: 'media/right_facing.png',
+        url: 'media/right_facing.png',       
+        tip: 'The printer I worked on ended up getting canceled due to the COVID-19 pandemic, this printer shares design cues with our concept',
     },
     1: {
         title: '2018',
         text: 'I worked on a special project within the Vancouver R&D lab to attempt to improve the print experience with modern voice assistants. This was a collaboration between designers, UX specialists, and engineers to explore how print and voice can go together. We ideated many new concepts and studied the ways people want to interact with their devices.',
         url: 'media/voiceprinter.jpg',
+        tip: 'A functional model I built of our voice activated printer, intended to be interacted with by test subjects to learn how people interact with voice activated printers',
     },
     2: {
         title: '2013-2017',
         text: 'My first four years at HP, I worked in their office print lab developing the Pagewide Pro. This was an ambitions printer which brought inkjet technology to the office. I worked in drive systems, designing and analyzing servo driven paper handling systems. I was responsible for ~30 injection molded plastic parts.',
-        url: 'media/pagewide.png',
+        url: 'media/pagewide.png',    
+        tip: 'The pagewide-pro 7xx series. Using an array of inkjets spanning the whole page, it can print at 70 pages per minute. I designed and tested the servo motors, as well as the mechanism that pulls paper out of the paper trays',
     },
     3: {
         title: '2013',
         text: 'My undergraduate capstone project was a plastic filament extruder to create filament for 3D printers using recycled plastic. We used a large stepper motor with gear reduction to turn a ship auger in a heated cylinder which melted the plastic and forced it through an opening. In addition to designing the drive mechanism, I also wrote the software to control filament feed and measure for quality checks.',
         url: 'media/extruder.jpg',
+        tip: 'Our plastic extruder. Pellets go in the funnel on top, the metal mid-section is where the heater is. Some parts of our final product were printed using filament that earlier versions of the extruder produced.',
     }
 }
 
@@ -25,7 +29,7 @@ $(document).ready(() => {
     let row=1;
     $('#timeline').css({
         display: 'grid',
-        gridTemplateColumns: '1fr 2fr 3fr 3fr',
+        gridTemplateColumns: '1fr 2fr 4fr 4fr',
         gridTemplateRows:'repeat(400px)',
         gap: '10px'
     })
@@ -46,7 +50,10 @@ $(document).ready(() => {
                         width: 'auto',
                         height: '300px'
                     })
-                ).attr({class: 'timePhoto'})
+                ).attr({
+                    class: 'timePhoto',
+                    title: timelineData[key].tip
+                })
                 .css({gridRow: row,
                     paddingLeft: '25px'})
             ).attr({

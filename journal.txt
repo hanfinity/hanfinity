@@ -8,4 +8,11 @@ Michael Han
 
 19 Aug - have a basic idea what the index page will look like. Implemented 
     start of previous experience page. Wrote javascript code to place
-    experiences on the page.
+    experiences on the page. Created navbar javascript file to add navbar
+    to top of each page
+
+23 Aug - timeline for previous work section looks good, need to add a variant 
+    for small screens. About section has been mostly fleshed out. Projects and
+    contact pages exist but are stubs. TODO: find a better favicon for the
+    page, make timeline work on mobile, decide a format for the contact page,
+    and a format for the projects page.
