@@ -20,4 +20,6 @@ Michael Han
 24 Aug - Created contact form
 
 25 Aug - Created grid layout for projects, used media queries to set number of
-    columns. Just need to fill out with actual project information and I'm done!
+    columns. Added three projects, thinking of more to add. Minor tweaks to css
+    in various places, made index cards a seperate class so they could be 
+    different to the projects cards.
