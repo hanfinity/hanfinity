@@ -2,7 +2,7 @@ let navItems = {
     'Home' : 'index.html',
     'About' : 'about.html',
     'Projects' : 'projects.html',
-    'Previous Work' : 'previous.html',
+    'Experience' : 'previous.html',
     'Contact' : 'contact.html'
 }
 
@@ -12,10 +12,12 @@ $(document).ready(() => {
         console.log(key)
         bar.append(
             $('<li>')
+                .attr({
+                    class: 'navbutton'
+                })
                 .css({
                     display: 'inline',
-                    padding: '25px',
-                    marginRight: '75px'
+                    marginRight: '25px'
                 })
                 .append(
                     $('<a>')
@@ -26,6 +28,7 @@ $(document).ready(() => {
                         
                 )
             )
+        bar.attr({class: 'navBar'});
     });
     $('#nav').append(bar)
 })

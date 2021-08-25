@@ -8,10 +8,35 @@ a:hover {
     font-style: normal;
 }
 
+.aboutGrid {
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutImage {
     display: block;
     margin:auto;
     border-radius:10px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutImage {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .aboutImage {
+        height: auto;
+        width: 100%;
+    }
+    .aboutText {
+        order: -1;
+    }
+    .navButton {
+        margin-right: 10px;
+    }
 }
 
 body {
@@ -73,6 +98,15 @@ body {
     align-self: center;
 }
 
+.navBar {
+    width: 90%;
+}
+
+.navButton {
+    display: inline;
+    margin-right: 25px;
+}
+
 .cardIndex {
     padding: 10%;
     margin-bottom: -20px;
@@ -113,11 +147,46 @@ body {
 
 .timeBody {
     grid-column: 3;
+    padding-right: 10px;
 }
 
 .timePhoto {
     grid-column: 4;
 } 
+
+.timeImg {
+    height: 300px;
+    width: auto;
+}
+
+@media (max-width: 1023px) {
+    .timeTitle {
+        font-size: x-large;
+    }
+    
+    .timeBody {
+        grid-column: 2;
+    }
+
+    .timePhoto {
+        grid-column: 3;
+    } 
+    .timeImg {
+        height: 200px;
+        width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .timeImg {
+        height: 100px;
+        width: auto;
+    } 
+    .timePhoto {
+        grid-column: 2;
+    }
+}
+
 
 .icons {
     width: 100%;
@@ -170,5 +239,8 @@ body {
 @media (min-width: 1025px) {
     .projectGrid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navButton {
+        margin-right: 75px;
     }
 }

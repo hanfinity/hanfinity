@@ -25,30 +25,51 @@ let timelineData = {
     }
 }
 
+var sml = window.matchMedia("(max-width: 575px");
+var med = window.matchMedia("(min-width: 576px) and (max-width: 1023px)");
+var lrg = window.matchMedia("(min-width: 1024px)")
+
+
 $(document).ready(() => {
     let row=1;
     $('#timeline').css({
         display: 'grid',
-        gridTemplateColumns: '1fr 2fr 4fr 4fr',
         gridTemplateRows:'repeat(400px)',
         gap: '10px'
     })
+    if(sml.matches) {
+        console.log('small');
+        $('#timeline').css({
+            gridTemplateColumns: '1fr 4fr',
+        })
+    } else if(med.matches) {
+        console.log('medium');
+        $('#timeline').css({
+            gridTemplateColumns: '1fr 4fr 3fr',
+        })
+    } else if(lrg.matches) {
+        console.log('large');
+        $('#timeline').css({
+            gridTemplateColumns: '1fr 2fr 4fr 4fr',
+        })
+    }
     Object.keys(timelineData).forEach((key) => {
         $('#timeline')
             .append(
                 $('<div>').text(timelineData[key].title)
                     .attr({class: 'timeTitle'})
                     .css({gridRow: row})
-            ).append(
-                $('<div>').text(timelineData[key].text)
-                .attr({class: 'timeBody'})
-                .css({gridRow: row})
-            ).append(
+            )
+        /* if window is large, stay on the same row, otherwise skip to next row */
+        if(sml.matches || med.matches) {
+            ++row;
+        }
+        $('#timeline')
+            .append(
                 $('<div>').append(
                     $('<img>').attr({
                         src: timelineData[key].url,
-                        width: 'auto',
-                        height: '300px'
+                        class: 'timeImg'
                     })
                 ).attr({
                     class: 'timePhoto',
@@ -59,7 +80,16 @@ $(document).ready(() => {
             ).attr({
                 class: 'timelineItem'
             })
+        /* if the  window is small, skip rows again*/
+        if(sml.matches) {
             ++row;
+        }$('#timeline')
+        .append(
+            $('<div>').text(timelineData[key].text)
+            .attr({class: 'timeBody'})
+            .css({gridRow: row})
+        )
+        ++row;
     })
     $('#line').css({
         gridRowStart:'1',
@@ -70,3 +100,10 @@ $(document).ready(() => {
     })
     console.log('timeline entries: ' + (row-1))
 })
+
+$(window).bind('resize', () => {
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(() => {
+    this.location.reload();
+  }, 100);
+});
