@@ -138,3 +138,27 @@ body {
     flex-wrap: wrap;
     align-content: center;
 }
+
+.projectGrid {
+    display: grid;
+    grid-template-rows: repeat(400px);
+    gap: 10px;
+}
+
+@media (max-width: 550px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+    .projectGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    .projectGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

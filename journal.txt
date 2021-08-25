@@ -18,3 +18,6 @@ Michael Han
     and a format for the projects page.
 
 24 Aug - Created contact form
+
+25 Aug - Created grid layout for projects, used media queries to set number of
+    columns. Just need to fill out with actual project information and I'm done!
