@@ -23,3 +23,7 @@ Michael Han
     columns. Added three projects, thinking of more to add. Minor tweaks to css
     in various places, made index cards a seperate class so they could be 
     different to the projects cards.
+
+25 Aug - Cont. - Rewrote timeline javascript and CSS to be responsive, now 
+    entries will be split up among rows at smaller widths. Altered about page
+    so that bio comes before pictures on mobile devices.

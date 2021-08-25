@@ -43,6 +43,10 @@ body {
     background-color: cornsilk;
 }
 
+.btn-primary {
+    font-weight: bolder;
+}
+
 .collegeImg {
     border-radius: 10px;
     opacity: 70%;
